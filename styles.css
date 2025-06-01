@@ -28,11 +28,23 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: whitesmoke;
+   background-color: hsl(120, 14%, 96%); /* Light green */
+    /* background-color: #f0f0f0; */
+
+    /* background: whitesmoke; */
     /* position: fixed; */
 }
-nav h1{
-    color: #45a049;
+.logo2{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+nav h7{
+    /* color: #45a049; */
+    margin-left: 10px;
+    font-size: 1rem;
+    font-weight: 60;
 }
 /* #hero{
     background-image: url('s.jpg');
@@ -233,7 +245,7 @@ nav h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('s.jpg');
+    background-image: url('hand.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

@@ -1,24 +1,19 @@
-// Navigation scroll effect
-window.addEventListener('scroll', function() {
-    const nav = document.querySelector('nav');
-    if (window.scrollY > 50) {
-        nav.style.background = '#fff';
-        nav.style.boxShadow = '0 2px 5px rgba(0,0,0,0.1)';
-    } else {
-        nav.style.background = 'transparent';
-        nav.style.boxShadow = 'none';
-    }
-});
-
-// Login button functionality
+// window.addEventListener('scroll', function() {
+//     const nav = document.querySelector('nav');
+//     if (window.scrollY > 50) {
+//         nav.style.background = '#fff';
+//         nav.style.boxShadow = '0 2px 5px rgba(0,0,0,0.1)';
+//     } else {
+//         nav.style.background = 'transparent';
+//         nav.style.boxShadow = 'none';
+//     }
+// }
 const loginBtn = document.querySelector('.login-btn');
 if (loginBtn) {
     loginBtn.addEventListener('click', function() {
         window.location.href = 'login.html';
     });
 }
-
-// Profile dropdown functionality
 const profileIcon = document.querySelector('.profile-icon');
 const profileDropdown = document.querySelector('.profile-dropdown');
 
