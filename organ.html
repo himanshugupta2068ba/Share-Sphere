@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organ Donation - ShareSphere</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <!-- <img src="sharsphere.jpg"> -->
+        <h1>ShareSphere</h1>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="request.html">Request</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li class="nav-card sell-card">
+                <a href="sell.html">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Sell Used Items</span>
+                </a>
+            </li>
+            <li class="nav-card organ-card">
+                <a href="organ.html">
+                    <i class="fas fa-heartbeat"></i>
+                    <span>Organ Donation</span>
+                </a>
+            </li>
+            <li><button class="login-btn">Login</button></li>
+            <li class="profile-icon"><i class="fas fa-user-circle"></i>
+                <div class="profile-dropdown">
+                    <ul>
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="page-header">
+        <h2>Organ Donation</h2>
+        <p>Save lives by becoming an organ donor</p>
+    </section>
+
+    <section class="organ-content">
+        <div class="organ-info">
+            <h3>Why Become an Organ Donor?</h3>
+            <ul class="organ-benefits">
+                <li>
+                    <i class="fas fa-check-circle"></i>
+                    <span>One organ donor can save up to 8 lives</span>
+                </li>
+                <li>
+                    <i class="fas fa-check-circle"></i>
+                    <span>Over 500,000 people are waiting for organ transplants</span>
+                </li>
+                <li>
+                    <i class="fas fa-check-circle"></i>
+                    <span>Your organs can help multiple recipients</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="organ-form-container">
+            <div class="organ-form">
+                <h3>Register as an Organ Donor</h3>
+                <form id="organForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="bloodGroup">Blood Group</label>
+                        <select id="bloodGroup" name="bloodGroup" required>
+                            <option value="">Select Blood Group</option>
+                            <option value="A+">A+</option>
+                            <option value="A-">A-</option>
+                            <option value="B+">B+</option>
+                            <option value="B-">B-</option>
+                            <option value="O+">O+</option>
+                            <option value="O-">O-</option>
+                            <option value="AB+">AB+</option>
+                            <option value="AB-">AB-</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact">Contact Number</label>
+                        <input type="tel" id="contact" name="contact" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <textarea id="address" name="address" rows="3" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="emergencyContact">Emergency Contact</label>
+                        <input type="tel" id="emergencyContact" name="emergencyContact" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="consent" name="consent" required>
+                            I consent to donate my organs after death
+                        </label>
+                    </div>
+                    <button type="submit" class="submit-btn">Register</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: ShareSphere@gmail.com</p>
+                <p>Phone: +91 7007585510</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 ShareSphere. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

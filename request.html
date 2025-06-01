@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Help - ShareSphere</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <!-- <img src="sharsphere.jpg"> -->
+        <h1>ShareSphere</h1>
+        <h3 class="con"> Connect. Contribute. Care...</h3>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="request.html" class="active">Request</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><button class="login-btn">Login</button></li>
+        </ul>
+    </nav>
+
+    <section class="page-header">
+        <h1>Request Help</h1>
+        <p>Tell us what you need and we'll help connect you with available resources</p>
+    </section>
+
+    <section class="request-form-container">
+        <div class="request-form">
+            <form id="requestForm">
+                <div class="form-group">
+                    <label for="requesterName">Your Name</label>
+                    <input type="text" id="requesterName" name="requesterName" required>
+                </div>
+                <div class="form-group">
+                    <label for="requestContact">Contact Number</label>
+                    <input type="tel" id="requestContact" name="requestContact" required>
+                </div>
+                <div class="form-group">
+                    <label for="requestType">Type of Help Needed</label>
+                    <select id="requestType" name="requestType" required>
+                        <option value="">Select Type</option>
+                        <option value="clothing">Clothing</option>
+                        <option value="books">Books</option>
+                        <option value="food">Food</option>
+                        <option value="sports">Sports Equipment</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="requestDescription">Description of Need</label>
+                    <textarea id="requestDescription" name="requestDescription" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="requestLocation">Location</label>
+                    <input type="text" id="requestLocation" name="requestLocation" required>
+                </div>
+                <button type="submit" class="submit-btn">Submit Request</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: ShareSphere@gmail.com</p>
+                <p>Phone: +91 7007585510</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 ShareSphere. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
