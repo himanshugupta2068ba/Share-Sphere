@@ -644,28 +644,12 @@ nav h7{
     font-size: 1rem;
 }
 .organ-info{
-    /* justify-content: center; */
-    margin-left: 560px;
-    /* align-self: center; */
-}
-
-.organ-benefits {
-    list-style: none;
-    padding: 0;
-    margin: 1.5rem 0;
-}
-
-.organ-benefits li {
     display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
-    color: var(--text-color);
-}
+    align-content: center;
+    justify-content: center;
+} 
 
-.organ-benefits i {
-    color: var(--primary-color);
-    margin-right: 0.5rem;
-}
+
 
 
 /* Footer */
