@@ -302,7 +302,21 @@ nav h7{
     margin-bottom: 2rem;
     color: white;
 }
+@media (max-width: 768px) {
+  #hero {
+    padding: 6rem 3% 3rem;
 
+    /* Adjust background for small screens */
+    background-size: contain; /* keeps full image visible */
+    background-repeat: no-repeat;
+    background-attachment: scroll; /* disables parallax for mobile (better performance) */
+ background-size: cover;
+    /* Fix vh if image height is small */
+    min-height: auto;
+    height: auto;
+  }
+
+}
 .cta-buttons {
     display: flex;
     gap: 1rem;
@@ -742,4 +756,74 @@ footer {
 }
 .page-header{
     color: blue;
+}
+/* .container{
+    display: flex;
+    
+    gap: 30px;
+    padding-left: 150px;
+    padding-bottom: 10px;
+}
+.container img{
+    width: 250px;
+    height: 250px;
+    border-radius: 2%;
+}
+.text{
+    max-width: 800px;
+      font-size: 18px;
+}
+.container:hover{
+      color: var(--primary-color);
+} */
+ .wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .card {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      width: 150px;
+      height: 200px;
+      border-radius: 10px;
+    }
+
+    .card .text {
+      max-width: 600px;
+    }
+
+    @media (max-width: 768px) {
+      .card {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+    .card:hover{
+          background: rgba(127, 141, 129, 0.1);
+    transform: translateY(-2px);
+    }
+    .card p:hover{
+        color: rgb(63, 26, 26);
+        font-style: italic;
+    }
+    .card img:hover{
+        animation: spin 2s linear;
+}
+
+@keyframes spin {
+  from { transform: rotateY(0deg); }
+  to { transform: rotateY(360deg); }
 }
