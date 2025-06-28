@@ -233,7 +233,7 @@ nav h7{
         color: white;
       }
     }  */
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
     nav {
         padding: 0.8rem 1%;
     }
@@ -256,7 +256,7 @@ nav h7{
         padding: 0.3rem 0.6rem;
         font-size: 0.8rem;
     }
-}
+} */
 
 /* Hero Section */
 #hero {
