@@ -187,8 +187,8 @@ nav h7{
     box-shadow: 0 2px 5px rgba(220, 53, 69, 0.2);
 }
 
-/* Responsive Navigation */
-@media (max-width: 768px) {
+/* Responsive Navigation  */
+ /* @media (max-width: 768px) {
     nav {
         padding: 1rem 1%;
     }
@@ -209,9 +209,30 @@ nav h7{
     .nav-links a {
         padding: 0.4rem 0.8rem;
         font-size: 0.85rem;
-    }
-}
+    } 
+ }  */
+    /* @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        padding: 15px 0;
+        z-index: 999;
+      }
 
+      .nav-links.show {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+        color: white;
+      }
+    }  */
 @media (max-width: 480px) {
     nav {
         padding: 0.8rem 1%;
@@ -291,7 +312,7 @@ nav h7{
 .primary-btn, .secondary-btn {
     text-decoration: none;
     background: white;
-    color: var(--primary-color);
+    color:darkblue;
     padding: 1rem 2rem;
     border: none;
     border-radius: 5px;
@@ -710,4 +731,15 @@ footer {
     #about {
         padding: 3rem 5%;
     }
+}
+.easydonation{
+    height: 100px;
+    width: 100px;
+}
+.share-item{
+    height: 100px;
+    width: 100px;
+}
+.page-header{
+    color: blue;
 }

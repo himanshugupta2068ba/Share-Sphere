@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <nav>
+    <!-- <nav>
            <h7><img src="logo ss.jpg" alt="logo" class="logo2">
             connect contribute care...</h7>
         <ul class="nav-links">
@@ -40,10 +40,207 @@
                 </div>
             </li>
         </ul>
-    </nav>
+    </nav> -->
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    nav {
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      z-index: 100;
+    }
+
+    nav h7 {
+      display: flex;
+      align-items: center;
+      font-size: 1rem;
+      color: white;
+    }
+
+    .logo2 {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 15px;
+      align-items: center;
+    }
+
+    .nav-links li {
+      position: relative;
+    }
+
+    .nav-links li a,
+    .nav-links li button {
+      color: white;
+      text-decoration: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 8px 12px;
+      transition: background 0.3s;
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-links li a:hover,
+    .nav-links li button:hover {
+      background-color: #575757;
+      border-radius: 5px;
+    }
+
+    .login-btn {
+      background-color: #04AA6D;
+      border-radius: 5px;
+      padding: 8px 12px;
+    }
+
+    .profile-icon {
+      cursor: pointer;
+      position: relative;
+    }
+
+    .profile-icon i {
+      font-size: 1.5rem;
+    }
+
+    .profile-dropdown {
+      display: none;
+      position: absolute;
+      right: 0;
+      top: 40px;
+      background-color: #444;
+      border-radius: 5px;
+      padding: 10px;
+      min-width: 150px;
+    }
+
+    .profile-dropdown ul {
+      list-style: none;
+    }
+
+    .profile-dropdown ul li a {
+      display: block;
+      padding: 8px 10px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .profile-dropdown ul li a:hover {
+      background-color: #555;
+      border-radius: 4px;
+    }
+
+    .profile-icon:hover .profile-dropdown {
+      display: block;
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 1.8rem;
+      color: white;
+      cursor: pointer;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        padding: 10px 0;
+      }
+
+      .nav-links.show {
+        display: flex;
+      }
+
+      .nav-links li {
+        text-align: left;
+        padding-left: 20px;
+      }
+
+      .profile-dropdown {
+        position: relative;
+        top: 0;
+        right: 0;
+      }
+
+      .profile-icon:hover .profile-dropdown {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <h7><img src="logo ss.jpg" alt="logo" class="logo2"> connect contribute care...</h7>
+
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="donate.html">Donate</a></li>
+    <li><a href="request.html">Request</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li class="nav-card sell-card">
+      <a href="sell.html">
+        <i class="fas fa-shopping-cart"></i>
+        <span>Sell Used Items</span>
+      </a>
+    </li>
+    <li class="nav-card organ-card">
+      <a href="organ.html">
+        <i class="fas fa-heartbeat"></i>
+        <span>Organ Donation</span>
+      </a>
+    </li>
+    <li><button class="login-btn">Login</button></li>
+    <li class="profile-icon">
+      <i class="fas fa-user-circle"></i>
+      <div class="profile-dropdown">
+        <ul>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Settings</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</nav>
+
+<script>
+  function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("show");
+  }
+</script>
     <section class="page-header">
-        <h2>Organ Donation</h2>
+        <h2 style="color: red;">Organ Donation</h2>
         <p>Save lives by becoming an organ donor</p>
     </section>
 

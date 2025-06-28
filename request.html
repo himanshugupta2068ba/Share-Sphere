@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <nav>
+    <!-- <nav>
             <h7><img src="logo ss.jpg" alt="logo" class="logo2">
             connect contribute care...</h7>
         <ul class="nav-links">
@@ -19,7 +19,125 @@
             <li><a href="index.html#about">About</a></li>
             <li><button class="login-btn">Login</button></li>
         </ul>
-    </nav>
+    </nav> -->
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    nav {
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+
+    nav h7 {
+      display: flex;
+      align-items: center;
+      font-size: 1rem;
+      color: white;
+    }
+
+    .logo2 {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 15px;
+    }
+
+    .nav-links li a,
+    .nav-links li button {
+      color: white;
+      text-decoration: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 8px 12px;
+      transition: background 0.3s ease;
+    }
+
+    .nav-links li a.active {
+      background-color: #04AA6D;
+      border-radius: 4px;
+    }
+
+    .nav-links li a:hover,
+    .nav-links li button:hover {
+      background-color: #575757;
+      border-radius: 4px;
+    }
+
+    .login-btn {
+      background-color: #04AA6D;
+      border-radius: 5px;
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 1.6rem;
+      color: white;
+      cursor: pointer;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        padding: 10px 0;
+        z-index: 1000;
+      }
+
+      .nav-links.show {
+        display: flex;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <h7><img src="logo ss.jpg" alt="logo" class="logo2"> connect contribute care...</h7>
+
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="donate.html">Donate</a></li>
+    <li><a href="request.html" class="active">Request</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li><button class="login-btn">Login</button></li>
+  </ul>
+</nav>
+
+<script>
+  function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("show");
+  }
+</script>
 
     <section class="page-header">
         <h1>Request Help</h1>

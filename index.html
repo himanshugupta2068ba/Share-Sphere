@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <nav>
+    <!-- <nav>
          <h7><img src="logo ss.jpg" alt="logo" class="logo2">
             connect contribute care...</h7>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="donate.html">Donate</a></li>
+            <div class="menu-toggle">☰</div> 
+        <ul class="nav-links"> -->
+            <!-- <li><a href="donate.html">Donate</a></li>
             <li><a href="request.html">Request</a></li>
             <li><a href="#about">About</a></li>
             <li class="nav-card sell-card">
@@ -31,7 +31,7 @@
             </li>
             <li><button class="login-btn">Login</button></li>
             <li class="profile-icon"><i class="fas fa-user-circle"></i>
-                <div class="profile-dropdown">
+                <div class="profile-dropdown" style="z-index: 1;">
                     <ul>
                         <li><a href="#">Profile</a></li>
                         <li><a href="#">Settings</a></li>
@@ -40,8 +40,150 @@
                 </div>
             </li>
         </ul>
-    </nav>
+    </nav> -->
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
+    nav {
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+
+    nav h7 {
+      display: flex;
+      align-items: center;
+      font-size: 1rem;
+    }
+
+    .logo2 {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 15px;
+    }
+
+    .nav-links li a,
+    .nav-links li button {
+      color: white;
+      text-decoration: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 8px 12px;
+    }
+
+    .nav-links li button.login-btn {
+      background-color: #04AA6D;
+      border-radius: 5px;
+    }
+
+    .nav-card a {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .profile-icon {
+      position: relative;
+      background-color: white;
+      border-radius: 50%;
+    }
+
+    .profile-dropdown {
+      display: none;
+      position: absolute;
+      top: 30px;
+      right: 0;
+      background-color: #444;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .profile-icon:hover .profile-dropdown {
+      display: block;
+    }
+
+    /* Hamburger icon */
+    .menu-toggle {
+      display: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        padding: 15px 0;
+        z-index: 999;
+      }
+
+      .nav-links.show {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+        color: white;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <h7><img src="logo ss.jpg" alt="logo" class="logo2">connect contribute care...</h7>
+
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div> <!-- Hamburger Button -->
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="donate.html">Donate</a></li>
+    <li><a href="request.html">Request</a></li>
+    <li><a href="#about">About</a></li>
+    <li class="nav-card sell-card">
+      <a href="sell.html"><i class="fas fa-shopping-cart"></i><span>Sell Used Items</span></a>
+    </li>
+    <li class="nav-card organ-card">
+      <a href="organ.html"><i class="fas fa-heartbeat"></i><span>Organ Donation</span></a>
+    </li>
+    <li><button class="login-btn">Login</button></li>
+    <li class="profile-icon"><i class="fas fa-user-circle"></i>
+      <div class="profile-dropdown">
+        <ul>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Settings</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</nav>
+
+<script>
+  function toggleMenu() {
+    const navLinks = document.getElementById('navLinks');
+    navLinks.classList.toggle('show');
+  }
+</script>
     <section id="hero">
         <div class="hero-image">
         </div>
@@ -54,58 +196,86 @@
             </div>
         </div>
     </section>
-
     <section id="features">
-        <div class="feature-card">
-            <i class="fas fa-hand-holding-heart"></i>
+       <div class="donation-categories">    
+         <div class="feature-card">
+            <!-- <i class="fas fa-hand-holding-heart"></i> -->
+            <img src="easydonation.jpg" alt="easydonation" class="easydonation">
             <h3>Easy Donations</h3>
             <p>Donate your unused items or surplus food with just a few clicks</p>
         </div>
         <div class="feature-card">
-            <i class="fas fa-map-marker-alt"></i>
+            <!-- <i class="fas fa-map-marker-alt"></i> -->
+             <img src="localconnection.jpg" alt="localconnection" class="easydonation">
             <h3>Local Connections</h3>
             <p>Find nearby recipients and organizations in need</p>
         </div>
         <div class="feature-card">
-            <i class="fas fa-users"></i>
+            <!-- <i class="fas fa-users"></i> -->
+             <img src="communityimpact.jpg" alt="communityimpact" class="easydonation">
             <h3>Community Impact</h3>
             <p>Join a community of givers and receivers making a difference</p>
-        </div>
+        </div> </div>
+   
     </section>
 
     <section id="donate">
-        <h2>What Can You Donate?</h2>
+        <h2>What Can You Donate or Sell?</h2>
         <div class="donation-categories">
             <div class="category-card">
-                <i class="fas fa-tshirt"></i>
+                <!-- <i class="fas fa-tshirt"></i> -->
+                 <img src="clothing.jpg" alt="cloth" class="share-item">
                 <p>Clothing</p>
             </div>
             <div class="category-card">
-                <i class="fas fa-book"></i>
+                <!-- <i class="fas fa-book"></i> -->
+                <img src="books.jpg" alt="books" class="share-item">
                 <p>Books</p>
             </div>
             <div class="category-card">
-                <i class="fas fa-utensils"></i>
+                <!-- <i class="fas fa-utensils"></i> -->
+                 <img src="food.jpg" alt="foods" class="share-item">
                 <p>Food</p>
             </div>
             <div class="category-card">
-                <i class="fas fa-futbol"></i>
+                <!-- <i class="fas fa-futbol"></i> -->
+                 <img src="sports.jpg" alt="sports" class="share-item">
                 <p>Sports Equipment</p>
             </div>
             <div class="category-card">
-                <i class="fas fa-couch"></i>
+                <!-- <i class="fas fa-couch"></i> -->
+                 <img src="furniture.jpg" alt="furniture" class="share-item">
                 <p>Furniture</p>
             </div>
             <div class="category-card">
-                <i class="fas fa-tools"></i>
+                <!-- <i class="fas fa-tools"></i> -->
+                 <img src="tools.jpg" alt="tools" class="share-item">
                 <p>Tools & Equipment</p>
+            </div>
+            <div class="category-card">
+                <h2>And Many More Items...</h2>
+                <h4>(Help the needy)</h4>
             </div>
         </div>
     </section>
 
     <section id="about">
-        <h2>About ShareSphere</h2>
-        <p>ShareSphere is a platform that connects people with items they no longer need to those who can benefit from them. We believe in reducing waste and building stronger communities through sharing.</p>
+        <h2>🌍 About ShareSphere</h2>
+        <!-- <p>ShareSphere is a platform that connects people with items they no longer need to those who can benefit from them. We believe in reducing waste and building stronger communities through sharing.</p> -->
+         <p>
+ShareSphere is more than just a platform — it’s a movement toward sustainability, compassion, and community. Our mission is to connect individuals who have items they no longer use with those who genuinely need them. By creating a seamless, secure, and user-friendly space for sharing, we aim to reduce waste, promote reuse, and foster meaningful connections among people.
+
+In a world where consumerism often leads to excess, ShareSphere offers an alternative: a space where generosity meets need. Whether it’s clothes, books, furniture, gadgets, or daily essentials — what may be unused by one person can bring joy or relief to another.
+
+We envision a society where:<br>
+
+🤝 Communities grow stronger through mutual support<br>
+
+🌱 Environmental impact is reduced by keeping usable items out of landfills<br>
+
+💙 People feel empowered to give and receive with dignity<br>
+
+With ShareSphere, every item shared is a step toward a more responsible, connected, and caring world. Join us in reshaping how we think about ownership, one shared item at a time.</p>
     </section>
 
     <footer>
