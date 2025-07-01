@@ -58,11 +58,55 @@
       position: relative;
     }
 
-    nav h7 {
+    /* nav h7 {
       display: flex;
       align-items: center;
       font-size: 1rem;
-    }
+    } */
+.logo-container {
+  /* text-align: center; */
+  /* margin-top: 15px; */
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.logo-title {
+  font-size: 1.5rem;
+  background: linear-gradient(135deg, #4b0082, #000); /* violet to black */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+  position: relative;
+  z-index: 1;
+}
+
+
+.logo-subtext {
+  font-size: 0.8rem;
+  color: #4b0082;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  margin-top: 10px;
+  display: flex;
+  top: 60%;
+  left: 50%;
+  pointer-events: none;
+}
+
+/* Hover effect */
+.logo-container:hover .logo-title {
+  transform: scale(0.90) translateY(-10px);
+}
+
+.logo-container:hover .logo-subtext {
+  opacity: 1;
+  transform: translateY(10);
+}
+
 
     .logo2 {
       height: 40px;
@@ -151,7 +195,12 @@
 <body>
 
 <nav>
-  <h7><img src="logo ss.jpg" alt="logo" class="logo2">connect contribute care...</h7>
+  <!-- <h7><img src="logo ss.jpg" alt="logo" class="logo2">connect contribute care...</h7> -->
+<!-- HTML -->
+<div class="logo-container">
+  <h1 class="logo-title">ShareSphere</h1>
+  <p class="logo-subtext">Connect · Contribute · Care</p>
+</div>
 
   <div class="menu-toggle" onclick="toggleMenu()">☰</div> <!-- Hamburger Button -->
 
@@ -315,8 +364,8 @@ ShareSphere provides a vital platform for individuals in urgent need of organ tr
     <footer>
         <div class="footer-content">
             <div class="footer-section">
-                <h4>Contact Us</h4>
-                <p>Email: ShareSphere@gmail.com</p>
+                <h4>Contact DEVELOPER</h4>
+                <p>Email: himanshugupta2068ba@gmail.com</p>
                 <p>Phone: +91 7007585510</p>
             </div>
             <div class="footer-section">

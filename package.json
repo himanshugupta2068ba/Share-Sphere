@@ -1,0 +1,22 @@
+{
+  "name": "sharesphere",
+  "version": "1.0.0",
+  "description": "Project Title:",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/himanshugupta2068ba/Share-Sphere.git"
+  },
+  "author": "himanshu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/himanshugupta2068ba/Share-Sphere/issues"
+  },
+  "homepage": "https://github.com/himanshugupta2068ba/Share-Sphere#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
