@@ -441,7 +441,7 @@ nav h7{
 }
 
 .login-box {
-    background: white;
+    background: skyblue;
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -452,7 +452,7 @@ nav h7{
 .login-box h2 {
     text-align: center;
     margin-bottom: 2rem;
-    color: var(--primary-color);
+    color: red;
 }
 
 .login-options {
@@ -462,7 +462,7 @@ nav h7{
 }
 
 .login-options a {
-    color: var(--primary-color);
+    color: red;
     text-decoration: none;
     font-size: 0.9rem;
 }
@@ -516,19 +516,19 @@ nav h7{
 .page-header {
     text-align: center;
     padding: 4rem 2rem;
-    background: var(--light-bg);
+    background: skyblue;
     margin-bottom: 4rem;
 }
 
 .page-header h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    color: var(--primary-color);
+    color: red;
 }
 
 .page-header p {
     font-size: 1.2rem;
-    color: var(--text-color);
+    color: black;
 }
 
 .donation-form-container, .request-form-container {
@@ -538,7 +538,7 @@ nav h7{
 }
 
 .donation-form, .request-form {
-    background: white;
+    background: rgb(144, 74, 74);
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -552,7 +552,7 @@ nav h7{
 .form-group label {
     display: block;
     margin-bottom: 0.5rem;
-    color: var(--text-color);
+    color: black;
     font-weight: 500;
 }
 
@@ -575,7 +575,7 @@ nav h7{
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-    border-color: var(--primary-color);
+    border-color: red;
     box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2);
 }
 
@@ -612,14 +612,14 @@ nav h7{
 }
 
 .submit-btn:hover {
-    background: #45a049;
+    background: #155719;
 }
 
 .sell-form, .organ-form {
     max-width: 600px;
     margin: 2rem auto;
     padding: 2rem;
-    background: white;
+    background: rgb(144, 74, 74);
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
@@ -823,6 +823,7 @@ footer {
   font-size: 1.5rem;
   background: linear-gradient(135deg, #4b0082, #000); /* violet to black */
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
   cursor: pointer;
